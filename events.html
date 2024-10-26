@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Event Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Calendar Event Manager</h1>
+
+<button onclick="displayUpcomingEvents()">Display Upcoming Events</button>
+<button onclick="addAttendeePrompt()">Add Attendee</button>
+<button onclick="convertToJSON()">Convert Events to JSON</button>
+<button onclick="deleteEventPrompt()">Delete Event</button>
+<button onclick="findEventWithMostAttendees()">Find Event with Most Attendees</button>
+
+<h2>Event Details</h2>
+<div id="event-details"></div>
+
+<script src="events.js"></script>
+
+</body>
+</html>

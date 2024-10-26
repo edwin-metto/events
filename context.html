@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> html events</h1>
+    <h2>contextmenu event</h2>
+    <div style="border:2px solid black;text-align: center;">
+        <p>right-click in this box!</p> 
+        <p>contextmenu will show</p>
+        
+    </div>
+    <br>
+    <div id="my div" style="border:2px solid black; text-align: center;"> 
+        <p>right-click in this box !</p>
+        <p>contextmenu is disabled</p>
+    </div>
+    <script>
+        const div=document.getElementById("my div");
+        div.addEventListener("contextmen (e) => {e.preventDefault()}");
+    </script>
+    
+</body>
+</html>
